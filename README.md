@@ -20,17 +20,27 @@ Must Have:
   4. As a user, I want to be able to view monthly/weekly statistics of my spendings, grouped by categories, so that I can improve my budgeting.
   
 Should Have:
+  
   5. As a user, I want to be able to add and view my income sources, so that I can make a plan for reaching my financial goals.
+  
   6. As a user, I want to be able to delete my account, so that I can quit being part of the system and delete all my data from it.
+  
   7. As a user, I want to be able to create my own financial goals and set-up a saving strategy, so that I can use my money on things that are actually important.
+  
   8. As a user, I want to be able to register recurring payments, such as rent/bills, so that they can be deducted automatically from my income. 
+  
   9. As a user, I want to be able to add my cards and cash funds, so that I can link them to my spendings.
+  
   10. As a user, I want to set my monthly spending goals by category, so that I can avoid overspending.
 
 Could Have:
+  
   11. As a user, I want to be able to share my monthly plan with my spouse/a friend, so that I can get feedback on my spending habits.
+  
   12. As a user, I want to be able to set a daily time for receiving notifications, so that I can be reminded to register my spendings.
+  
   13. As a user, I want to be able to simulate the impact of loans on my budget, so that I can decide whether or not they are worth it.
+  
   14. As a user, I want to be able to get budgeting tips/advice, so that I can get the most out of my money.
 
 Won’t Have:
