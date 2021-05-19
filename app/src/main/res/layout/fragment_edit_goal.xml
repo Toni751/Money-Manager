@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.goals.EditGoalFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.fragments.goals.EditGoalFragment"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:id="@+id/editGoalNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editGoalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_goal_name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/editGoalNameError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goal_name_cannot_be_empty"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/editGoalTargetAmountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/target_amount_dkk" />
+
+        <EditText
+            android:id="@+id/editGoalTargetAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_target_amount"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/editGoalTargetAmountError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/target_amount_cannot_be_empty"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/editGoalCurrentAmountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/current_amount" />
+
+        <EditText
+            android:id="@+id/editGoalCurrentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_current_amount"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/editGoalCurrentAmountError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_amount_cannot_be_empty"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/editGoalDueDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/due_date" />
+
+        <EditText
+            android:id="@+id/editGoalDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/editGoalDueDateError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_date_cannot_be_empty"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/editGoalStartDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/start_date" />
+
+        <EditText
+            android:id="@+id/editGoalStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/editGoalStartDateError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date_cannot_be_empty"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/submitEditGoalButton"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="@string/confirm"
+                android:background="@color/blue_bg"
+                android:textColor="@color/white"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/deleteGoalButton"
+                android:layout_width="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="@string/delete"
+                android:background="#D21717"
+                android:textColor="@color/white"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

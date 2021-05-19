@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/goalCardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save 5000dkk for Holiday by 01/07/2021"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/goalCardProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="35"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/goalCardCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1750dkk (35%) Complete - Started 20/04/2021" />
+</LinearLayout>

@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
         NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+
+        MenuItem logoutItem = navigationView.getMenu().getItem(7);
+        logoutItem.setOnMenuItemClickListener(menuItem ->  {
+                viewModel.signOut();
+                return false;
+        });
 
         TextView usernameNavHeader = navigationView.getHeaderView(0).findViewById(R.id.nameTextView);
         TextView emailNavHeader = navigationView.getHeaderView(0).findViewById(R.id.emailTextView);

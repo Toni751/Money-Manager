@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.categories.EditCategoryFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.fragments.categories.EditCategoryFragment"
+        android:layout_marginBottom="90dp">
+
+        <TextView
+            android:id="@+id/editCategoryNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_category_name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/editCategoryNameError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name cannot be empty!"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:id="@+id/editCategoryMonthlyGoalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/monthly_spending_goal" />
+
+        <EditText
+            android:id="@+id/editCategoryMonthlyGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_amount_in_dkk"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/editCategoryMonthlyGoalError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly goal cannot be empty!"
+            android:textSize="12sp"
+            android:textColor="#f00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/submitEditCategoryButton"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="@string/confirm"
+                android:background="@color/blue_bg"
+                android:textColor="@color/white"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/deleteCategoryButton"
+                android:layout_width="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="@string/delete"
+                android:background="#D21717"
+                android:textColor="@color/white"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    
+    <ImageView
+        android:id="@+id/accountTypeIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_credit_card_24"
+        android:layout_gravity="center"
+        android:layout_marginEnd="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/accountViewHeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SydBank Credit Card (credit card)" />
+
+        <EditText
+            android:id="@+id/accountViewHeaderEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="SydBank Credit Card (credit card)"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/accountViewAmountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount 20.000 dkk" />
+
+        <EditText
+            android:id="@+id/accountViewAmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Amount 20.000 dkk"
+            android:inputType="numberDecimal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/accountViewIncomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly income: 7000dkk" />
+
+        <EditText
+            android:id="@+id/accountViewIncomeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Monthly income: 7000dkk"
+            android:inputType="numberDecimal"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/accountViewTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type: Credit Card" />
+
+        <TextView
+            android:id="@+id/accountViewTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/type" />
+
+        <Spinner
+            android:id="@+id/editAccountTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/editAccountButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_edit_24"
+        android:layout_gravity="center"
+        android:background="@color/darker_amber_bg" />
+
+    <ImageButton
+        android:id="@+id/confirmEditAccountButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_done_24"
+        android:layout_gravity="center"
+        android:background="@color/blue_bg"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageButton
+        android:id="@+id/deleteAccountButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        android:layout_gravity="center"
+        android:background="#FF0000"/>
+
+</LinearLayout>

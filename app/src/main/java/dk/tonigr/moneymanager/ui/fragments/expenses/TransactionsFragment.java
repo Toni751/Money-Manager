@@ -1,4 +1,4 @@
-package dk.tonigr.moneymanager.ui.fragments;
+package dk.tonigr.moneymanager.ui.fragments.expenses;
 
 import android.os.Bundle;
 
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 
 import dk.tonigr.moneymanager.R;
 
-public class AccountsFragment extends Fragment {
+public class TransactionsFragment extends Fragment {
 
-    public AccountsFragment() {
+    public TransactionsFragment() {
         // Required empty public constructor
     }
 
@@ -20,6 +20,6 @@ public class AccountsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_accounts, container, false);
+        return inflater.inflate(R.layout.fragment_transactions, container, false);
     }
 }

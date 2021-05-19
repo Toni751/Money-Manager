@@ -8,4 +8,59 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="overview_cards">Overview Cards</string>
     <string name="no_idea">No idea</string>
+    <string name="add_account">Add Account</string>
+    <string name="amount_cannot_be_empty">Amount cannot be empty!</string>
+    <string name="enter_amount_in_dkk">Enter amount in dkk..</string>
+    <string name="monthly_income">Monthly income</string>
+    <string name="enter_monthly_income">Enter monthly income..</string>
+    <string name="income_cannot_be_empty">Income cannot be empty!</string>
+    <string name="type">Type</string>
+    <string name="amount_dkk">Amount(dkk)</string>
+    <string name="account_name_cannot_be_empty">Account name cannot be empty!</string>
+    <string name="enter_account_name">Enter account name..</string>
+    <string name="name">Name</string>
+    <string name="add_goal">Add Goal</string>
+    <string name="enter_goal_name">Enter goal name..</string>
+    <string name="goal_name_cannot_be_empty">Goal name cannot be empty!</string>
+    <string name="target_amount_dkk">Target amount(dkk)</string>
+    <string name="enter_target_amount">Enter target amount..</string>
+    <string name="target_amount_cannot_be_empty">Target amount cannot be empty!</string>
+    <string name="current_amount">Current amount(dkk)</string>
+    <string name="enter_current_amount">Enter current amount..</string>
+    <string name="current_amount_cannot_be_empty">Current amount cannot be empty!</string>
+    <string name="due_date">Due date</string>
+    <string name="start_date">Start date</string>
+    <string name="due_date_cannot_be_empty">Due date cannot be empty!</string>
+    <string name="start_date_cannot_be_empty">Start date cannot be empty!</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="add_category">Add Category</string>
+    <string name="enter_category_name">Enter category name..</string>
+    <string name="monthly_spending_goal">Monthly spending goal</string>
+    <string-array name="account_type">
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+        <item>Savings Account</item>
+        <item>Cash</item>
+    </string-array>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="enter_transaction_name">Enter transaction name..</string>
+    <string name="transaction_name_cannot_be_empty">Transaction name cannot be empty!</string>
+    <string name="is_the_transaction_recurring_every_month">Is the transaction recurring every month?</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="date">Date</string>
+    <string name="date_cannot_be_empty">Date cannot be empty!</string>
 </resources>

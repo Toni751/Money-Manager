@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
@@ -31,7 +32,7 @@ public class OverviewFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_overview, container, false);
         FloatingActionButton fab = view.findViewById(R.id.fab);
-        fab.setOnClickListener(v -> Toast.makeText(getContext(), "Overview fab clicked", Toast.LENGTH_SHORT).show());
+        fab.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.action_overviewFragment_to_addExpenseFragment));
         return view;
     }
 

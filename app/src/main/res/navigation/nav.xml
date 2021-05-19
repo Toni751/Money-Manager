@@ -8,28 +8,38 @@
     <fragment
         android:id="@+id/overviewFragment"
         android:name="dk.tonigr.moneymanager.ui.fragments.OverviewFragment"
-        android:label="Overview"
-        tools:layout="@layout/fragment_overview" />
+        android:label="Monthly Overview"
+        tools:layout="@layout/fragment_overview" >
+        <action
+            android:id="@+id/action_overviewFragment_to_addExpenseFragment"
+            app:destination="@id/addExpenseFragment" />
+    </fragment>
     <fragment
         android:id="@+id/accountsFragment"
-        android:name="dk.tonigr.moneymanager.ui.fragments.AccountsFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.accounts.AccountsFragment"
         android:label="Accounts"
-        tools:layout="@layout/fragment_accounts" />
+        tools:layout="@layout/fragment_accounts" >
+        <action
+            android:id="@+id/action_accountsFragment_to_addAccountFragment"
+            app:destination="@id/addAccountFragment" />
+    </fragment>
     <fragment
         android:id="@+id/transactionsFragment"
-        android:name="dk.tonigr.moneymanager.ui.fragments.TransactionsFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.expenses.TransactionsFragment"
         android:label="Transactions"
         tools:layout="@layout/fragment_transactions" />
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="dk.tonigr.moneymanager.ui.fragments.CategoriesFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.categories.CategoriesFragment"
         android:label="Categories"
-        tools:layout="@layout/fragment_categories" />
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="dk.tonigr.moneymanager.ui.fragments.SettingsFragment"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_addCategoryFragment"
+            app:destination="@id/addCategoryFragment" />
+        <action
+            android:id="@+id/action_categoriesFragment_to_editCategoryFragment"
+            app:destination="@id/editCategoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/friendsFragment"
         android:name="dk.tonigr.moneymanager.ui.fragments.FriendsFragment"
@@ -37,7 +47,78 @@
         tools:layout="@layout/fragment_friends" />
     <fragment
         android:id="@+id/goalsFragment"
-        android:name="dk.tonigr.moneymanager.ui.fragments.GoalsFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.goals.GoalsFragment"
         android:label="Goals"
-        tools:layout="@layout/fragment_goals" />
+        tools:layout="@layout/fragment_goals" >
+        <action
+            android:id="@+id/action_goalsFragment_to_addGoalFragment"
+            app:destination="@id/addGoalFragment" />
+        <action
+            android:id="@+id/action_goalsFragment_to_editGoalFragment"
+            app:destination="@id/editGoalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAccountFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.accounts.AddAccountFragment"
+        android:label="Add Account"
+        tools:layout="@layout/fragment_add_account" >
+        <action
+            android:id="@+id/action_addAccountFragment_to_accountsFragment"
+            app:destination="@id/accountsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGoalFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.goals.AddGoalFragment"
+        android:label="Add Goal"
+        tools:layout="@layout/fragment_add_goal" >
+        <action
+            android:id="@+id/action_addGoalFragment_to_goalsFragment"
+            app:destination="@id/goalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editGoalFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.goals.EditGoalFragment"
+        android:label="Edit Goal"
+        tools:layout="@layout/fragment_edit_goal" >
+        <action
+            android:id="@+id/action_editGoalFragment_to_goalsFragment"
+            app:destination="@id/goalsFragment" />
+        <argument
+            android:name="goal"
+            app:argType="dk.tonigr.moneymanager.models.db.Goal" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.categories.AddCategoryFragment"
+        android:label="Add Category"
+        tools:layout="@layout/fragment_add_category" >
+        <action
+            android:id="@+id/action_addCategoryFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCategoryFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.categories.EditCategoryFragment"
+        android:label="Edit Category"
+        tools:layout="@layout/fragment_edit_category" >
+        <action
+            android:id="@+id/action_editCategoryFragment_to_categoriesFragment"
+            app:destination="@id/categoriesFragment" />
+        <argument
+            android:name="category"
+            app:argType="dk.tonigr.moneymanager.models.db.Category" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.SettingsFragment"
+        android:label="Settings" />
+    <fragment
+        android:id="@+id/addExpenseFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.expenses.AddExpenseFragment"
+        android:label="Add Transaction"
+        tools:layout="@layout/fragment_add_expense" >
+        <action
+            android:id="@+id/action_addExpenseFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment" />
+    </fragment>
 </navigation>
