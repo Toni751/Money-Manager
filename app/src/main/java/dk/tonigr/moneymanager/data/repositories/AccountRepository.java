@@ -39,12 +39,6 @@ public class AccountRepository {
     }
 
     public LiveData<List<Account>> getAccounts() {
-//        List<Account> accounts = new ArrayList<>();
-//        accounts.add(new Account(1, "Sydbank card", "Credit card", 20000, 7000));
-//        accounts.add(new Account(2, "Revolut card", "Debit card", 2000, 300));
-//        accounts.add(new Account(3, "Cash hidden under the bed", "Cash", 500, 200));
-//        return accounts;
-//        Log.i("please", allAccounts.getValue().toString());
         Log.i("please", "Repository getting all accounts");
         allAccounts = accountDAO.getAllAccounts();
         return allAccounts;

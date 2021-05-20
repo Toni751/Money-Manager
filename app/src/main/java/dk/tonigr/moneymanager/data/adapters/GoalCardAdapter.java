@@ -81,7 +81,6 @@ public class GoalCardAdapter extends RecyclerView.Adapter<GoalCardAdapter.GoalVi
     }
 
     public interface GoalCardAdapterOnClickListener{
-        //void onGoalCardClick(int goal_id, String name, double target_amount, double current_amount, Date due_date, Date start_date);
         void onGoalCardClick(Goal goal);
     }
 }

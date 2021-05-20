@@ -5,6 +5,7 @@ import androidx.room.ForeignKey;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -12,7 +13,7 @@ import java.util.Date;
         @ForeignKey(entity = Account.class, parentColumns = "account_id", childColumns = "account_id"),
         @ForeignKey(entity = Category.class, parentColumns = "category_id", childColumns = "category_id")
 })
-public class Expense {
+public class Expense implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     private int expense_id;

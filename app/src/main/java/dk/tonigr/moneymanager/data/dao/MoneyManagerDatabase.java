@@ -5,11 +5,9 @@ import android.content.Context;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.room.TypeConverters;
 
 import dk.tonigr.moneymanager.models.db.Account;
 import dk.tonigr.moneymanager.models.db.Category;
-import dk.tonigr.moneymanager.models.db.Converters;
 import dk.tonigr.moneymanager.models.db.Expense;
 import dk.tonigr.moneymanager.models.db.Goal;
 

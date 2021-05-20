@@ -29,9 +29,4 @@ public interface CategoryDAO {
 
     @Query("SELECT * FROM categories ORDER BY name ASC")
     LiveData<List<CategoryWithExpenses>> getAllCategoriesWithExpenses();
-
-    // @Query("SELECT DISTINCT c.* FROM categories c LEFT JOIN expenses e ON c.category_id = e.category_id WHERE e.dateTime > :month ORDER BY name ASC")
-    // @Query("SELECT e.* FROM expenses e JOIN categories c ON c.category_id = e.category_id WHERE e.dateTime > :month ORDER BY name ASC")
-    @Query("SELECT * FROM categories c JOIN expenses e ON c.category_id = e.category_id WHERE e.dateTime LIKE :month ORDER BY c.name ASC")
-    LiveData<List<CategoryWithExpenses>> getAllCategoriesWithExpensesForMonth(String month);
 }

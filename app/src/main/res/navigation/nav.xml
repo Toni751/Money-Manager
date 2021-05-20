@@ -27,7 +27,11 @@
         android:id="@+id/transactionsFragment"
         android:name="dk.tonigr.moneymanager.ui.fragments.expenses.TransactionsFragment"
         android:label="Transactions"
-        tools:layout="@layout/fragment_transactions" />
+        tools:layout="@layout/fragment_transactions" >
+        <action
+            android:id="@+id/action_transactionsFragment_to_editExpenseFragment"
+            app:destination="@id/editExpenseFragment" />
+    </fragment>
     <fragment
         android:id="@+id/categoriesFragment"
         android:name="dk.tonigr.moneymanager.ui.fragments.categories.CategoriesFragment"
@@ -120,5 +124,17 @@
         <action
             android:id="@+id/action_addExpenseFragment_to_overviewFragment"
             app:destination="@id/overviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editExpenseFragment"
+        android:name="dk.tonigr.moneymanager.ui.fragments.expenses.EditExpenseFragment"
+        android:label="Edit Transaction"
+        tools:layout="@layout/fragment_edit_expense" >
+        <action
+            android:id="@+id/action_editExpenseFragment_to_transactionsFragment"
+            app:destination="@id/transactionsFragment" />
+        <argument
+            android:name="expense"
+            app:argType="dk.tonigr.moneymanager.models.db.Expense" />
     </fragment>
 </navigation>

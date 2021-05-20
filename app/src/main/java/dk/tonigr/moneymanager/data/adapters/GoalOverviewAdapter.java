@@ -41,10 +41,10 @@ public class GoalOverviewAdapter extends RecyclerView.Adapter<GoalOverviewAdapte
     public void onBindViewHolder(@NonNull GoalOverviewViewHolder holder, int position) {
         Goal currentGoal = goals.get(position);
         DecimalFormat formatter = new DecimalFormat("0.##");
-        // Save 5000dkk for Holiday by 01/07/2021
+
         String header = "Save " + formatter.format(currentGoal.getTarget_amount()) + PreferenceManager.getDefaultSharedPreferences(holder.currentText.getContext()).getString("currency", "") +" for " + currentGoal.getName() + " by " + DateStringConverter.convertDbDateToUiDate(currentGoal.getDue_date());
         holder.headerText.setText(header);
-        // 1750dkk (35%) Complete - Started 20/04/2021
+
         double percentage = currentGoal.getCurrent_amount() * 100 / currentGoal.getTarget_amount();
         holder.progressBar.setProgress((int) percentage);
 

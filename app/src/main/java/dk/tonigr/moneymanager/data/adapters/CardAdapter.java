@@ -17,8 +17,6 @@ import java.util.Calendar;
 import java.util.List;
 
 import dk.tonigr.moneymanager.R;
-import dk.tonigr.moneymanager.models.CategoryCard;
-import dk.tonigr.moneymanager.models.db.Category;
 import dk.tonigr.moneymanager.models.db.CategoryWithExpenses;
 import dk.tonigr.moneymanager.models.db.Expense;
 import dk.tonigr.moneymanager.util.ChartDataCache;
@@ -38,7 +36,6 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull CardAdapter.CardViewHolder holder, int position) {
-        // CategoryCard currentCategory = categories.get(position);
         CategoryWithExpenses category = categories.get(position);
         DecimalFormat formatter = new DecimalFormat("0.##");
 

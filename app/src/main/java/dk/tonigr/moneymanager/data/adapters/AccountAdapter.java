@@ -182,48 +182,10 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.AccountV
             confirmEditAccountButton = itemView.findViewById(R.id.confirmEditAccountButton);
             deleteAccountButton = itemView.findViewById(R.id.deleteAccountButton);
 
-            // editAccountButton.setOnClickListener(this::handleEditAccount);
-            // confirmEditAccountButton.setOnClickListener(this::handleConfirmEditAccount);
-
             ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(itemView.getContext(),
                     R.array.account_type, android.R.layout.simple_spinner_item);
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner.setAdapter(adapter);
         }
-
-//        private void handleEditAccount(View view) {
-//            accountHeader.setVisibility(View.GONE);
-//            accountAmount.setVisibility(View.GONE);
-//            accountIncome.setVisibility(View.GONE);
-//            accountType.setVisibility(View.GONE);
-//            accountTypeLabel.setVisibility(View.VISIBLE);
-//
-//            accountHeaderET.setVisibility(View.VISIBLE);
-//            accountAmountET.setVisibility(View.VISIBLE);
-//            accountIncomeET.setVisibility(View.VISIBLE);
-//            spinner.setVisibility(View.VISIBLE);
-//
-//            editAccountButton.setVisibility(View.GONE);
-//            confirmEditAccountButton.setVisibility(View.VISIBLE);
-//            deleteAccountButton.setVisibility(View.VISIBLE);
-//        }
-
-//        private void handleConfirmEditAccount(View view) {
-//            viewModel.updateAccount();
-//            accountHeaderET.setVisibility(View.GONE);
-//            accountAmountET.setVisibility(View.GONE);
-//            accountIncomeET.setVisibility(View.GONE);
-//            spinner.setVisibility(View.GONE);
-//
-//            accountHeader.setVisibility(View.VISIBLE);
-//            accountAmount.setVisibility(View.VISIBLE);
-//            accountIncome.setVisibility(View.VISIBLE);
-//            accountType.setVisibility(View.VISIBLE);
-//            accountTypeLabel.setVisibility(View.GONE);
-//
-//            editAccountButton.setVisibility(View.VISIBLE);
-//            confirmEditAccountButton.setVisibility(View.GONE);
-//            deleteAccountButton.setVisibility(View.GONE);
-//        }
     }
 }

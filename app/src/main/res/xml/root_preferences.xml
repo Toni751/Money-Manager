@@ -16,7 +16,15 @@
             android:icon="@drawable/ic_baseline_notifications_24"
             app:key="notifications"
             app:title="Allow Notifications"
-            android:defaultValue="true"/>
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:dependency="notifications"
+            app:key="notifications_time"
+            app:title="Notifications time"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="20:00"
+            android:focusable="false"/>
 
     </PreferenceCategory>
     <PreferenceCategory app:title="Issues">

@@ -63,4 +63,6 @@
     <string name="add_expense">Add Expense</string>
     <string name="date">Date</string>
     <string name="date_cannot_be_empty">Date cannot be empty!</string>
+    <string name="channel_name">money manager</string>
+    <string name="channel_description">money manager channel description</string>
 </resources>

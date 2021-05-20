@@ -6,11 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import dk.tonigr.moneymanager.data.repositories.CategoryRepository;
-import dk.tonigr.moneymanager.models.CategoryCard;
 import dk.tonigr.moneymanager.models.db.Category;
 import dk.tonigr.moneymanager.models.db.CategoryWithExpenses;
 
@@ -22,10 +20,6 @@ public class CategoryViewModel extends AndroidViewModel {
         super(application);
         categoryRepository = CategoryRepository.getInstance(application);
     }
-
-//    public List<CategoryCard> getCategoryCards() {
-//        return categoryRepository.getCategoryCards();
-//    }
 
     public void addCategory(Category category){
         categoryRepository.addCategory(category);
