@@ -1,6 +1,8 @@
 # Money-Manager
 Money Manager/Budgeting Android App
 
+* Youtube video link: https://www.youtube.com/watch?v=t-Sx_B6ic78
+
 Description & Motivation:
 
 The purpose of this application is to help people get the most out of their money and to help them reach easier their financial goals. The will help the users monitor
@@ -13,9 +15,11 @@ on where he/she needs to cut back on. There will also be an option to share the 
 
 MoSCoW requirements:
 
+* Final update: all the most important user stories have been implemented successfully as it can be seen, however, some low priority ones have not been implemented, the most significant one being sharing one's spendings with his/her friends. This will be a great next release feature I guess, and it should also make good use of firebase.
+
 Must Have:
   1. As a user, I want to have an account, so that I can keep track of my activity in the system.
-  2. As a user, I want to be able to register expenses, so that I can track my budget throughout the month.
+  2. As a user, I want to be able to create/update/remove expenses, so that I can track my budget throughout the month.
   3. As a user, I want to be able to create/update/remove spending categories, so that I accurately monitor my spendings.
   4. As a user, I want to be able to view monthly/weekly statistics of my spendings, grouped by categories, so that I can improve my budgeting.
   
@@ -35,18 +39,19 @@ Should Have:
 
 Could Have:
   
-  11. As a user, I want to be able to share my monthly plan with my spouse/a friend, so that I can get feedback on my spending habits.
+  11. (NOT implemented) As a user, I want to be able to share my monthly plan with my spouse/a friend, so that I can get feedback on my spending habits.
   
   12. As a user, I want to be able to set a daily time for receiving notifications, so that I can be reminded to register my spendings.
   
-  13. As a user, I want to be able to simulate the impact of loans on my budget, so that I can decide whether or not they are worth it.
+  13. (NOT implemented) As a user, I want to be able to simulate the impact of loans on my budget, so that I can decide whether or not they are worth it.
   
-  14. As a user, I want to be able to get budgeting tips/advice, so that I can get the most out of my money.
+  14. (NOT implemented) As a user, I want to be able to get budgeting tips/advice, so that I can get the most out of my money.
 
 Won’t Have:
   - None so far, maybe something like a user level, which increases by achieving your financial goals and by using the app
 
 Non-functional requirements:
+* I've decided to put all my focus on the functionality instead of translating the application and creating a good looking dark theme, so I guess these are also not implemented.
   1. The application will have both a light and a dark theme.
   2. The application will be available in English, Danish and Romanian.
 
